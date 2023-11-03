@@ -1,0 +1,17 @@
+.gallery-item {
+  flex: 1 0 calc(33.33% - 20px);
+  background-color: #FF6060;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    margin-top: 10px;
+    color: #FFFFFF;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
