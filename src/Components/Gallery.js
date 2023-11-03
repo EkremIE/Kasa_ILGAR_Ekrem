@@ -6,7 +6,7 @@ function Gallery() {
     return (
         <div className="gallery">
             {jsonData.map((item) => (
-                <GalleryItem key={item.id} title={item.title} />
+                <GalleryItem key={item.id} title={item.title} cover={item.cover} />
             ))}
         </div>
     );

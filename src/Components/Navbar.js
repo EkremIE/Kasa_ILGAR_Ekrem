@@ -1,11 +1,13 @@
+// Navbar.js
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 
 function Navbar() {
     return (
         <nav>
             <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/a-propos">A propos</a></li>
+                <li><Link to="/">Accueil</Link></li>
+                <li><Link to="/about">À propos</Link></li>
             </ul>
         </nav>
     );
