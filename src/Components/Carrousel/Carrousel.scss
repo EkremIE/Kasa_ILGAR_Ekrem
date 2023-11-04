@@ -1,0 +1,29 @@
+
+.image-carousel {
+  position: relative;
+  margin-bottom: 20px;
+
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: #fff; // Modifier en fonction de la maquette
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    &.left {
+      left: 10px;
+    }
+
+    &.right {
+      right: 10px;
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}

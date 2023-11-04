@@ -1,0 +1,33 @@
+// Dropdowns
+.dropdown {
+  margin: 20px 0;
+  border: none;
+
+  &-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6060; // Red from the mockup
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:after {
+      content: '▼';
+      float: right;
+    }
+  }
+
+  &-content {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none; // Hidden by default
+
+    // This is the new part
+    &.show {
+      display: block; // Shown when 'show' class is added
+    }
+  }
+}

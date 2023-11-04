@@ -1,0 +1,23 @@
+.accommodation {
+  padding: 20px;
+}
+
+
+.accommodation-title {
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .tags {
+    display: flex;
+    gap: 10px;
+
+    .tag {
+      padding: 5px 10px;
+      background-color: #ff6060; // Rouge de la maquette
+      color: white;
+      border-radius: 20px;
+      font-size: 0.8em;
+    }
+  }
+}
