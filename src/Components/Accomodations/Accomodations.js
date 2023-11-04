@@ -25,7 +25,7 @@ function Accommodation() {
 
     return (
         <div className="accommodation">
-            <Header />
+            <Header showBackground={false} />
             <Carousel images={logement.pictures} />
             <div className="accommodation-details">
                 <h2 className="accommodation-title">{logement.title}</h2>
