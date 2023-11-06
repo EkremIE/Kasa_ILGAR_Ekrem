@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import jsonData from '../../logements.json';
-import Carousel from '../Carrousel/Carrousel';
+import Carousel from '../Carrousel/Carousel';
 import './Accomodations.scss';
 import Dropdown from "../Dropdown/Dropdown";
 import Header from "../Header/Header";

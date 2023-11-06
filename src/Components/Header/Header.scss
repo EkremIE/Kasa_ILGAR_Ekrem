@@ -1,19 +1,13 @@
+@import '../../Styles/variables';
+
 .kasa-header {
-  background-color: #ffffff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  .kasa-logo {
-    width: 100px;
-  }
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 30px 30px 15px;
 }
 
-:root {
-  --gray: rgba(246, 246, 246, 1);
-  --red: rgba(255, 96, 96, 1);
-}
 
 .box {
   height: 223px;
@@ -50,3 +44,4 @@
     color: white;
   }
 }
+

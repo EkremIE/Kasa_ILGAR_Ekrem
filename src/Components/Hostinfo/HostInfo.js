@@ -8,8 +8,9 @@ function HostInfo({ name, picture, rating, location, tags }) {
             <div className="host">
                 <div className="host-name">{name}</div>
                 <img className="host-picture" src={picture} alt={`Hébergé par ${name}`} />
+                <div className="rating">Note : {rating} étoiles</div>
             </div>
-            <div className="rating">Note : {rating} étoiles</div>
+
             <div className="location">Lieu : {location}</div>
             <div className="tags">
                 {tags.map((tag, index) => (

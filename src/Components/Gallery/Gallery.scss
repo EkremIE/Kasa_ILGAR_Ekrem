@@ -1,6 +1,9 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px 0;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: calc(340px * 3 + 30px * 4);
 }
