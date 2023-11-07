@@ -37,6 +37,7 @@ function Accommodation() {
                     tags={logement.tags}
                 />
             </div>
+            <span className="host-dropdowns">
             <Dropdown title="Description">
                 <p>{logement.description}</p>
             </Dropdown>
@@ -47,6 +48,7 @@ function Accommodation() {
                     ))}
                 </ul>
             </Dropdown>
+        </span>
             <Footer />
         </div>
     );

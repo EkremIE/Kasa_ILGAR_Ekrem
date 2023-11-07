@@ -4,13 +4,13 @@ import './Carousel.scss';
 const Carousel = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const goToPrevious = () => {
+    const Previous = () => {
         const isFirstImage = currentIndex === 0;
         const newIndex = isFirstImage ? images.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     };
 
-    const goToNext = () => {
+    const Next = () => {
         const isLastImage = currentIndex === images.length - 1;
         const newIndex = isLastImage ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
@@ -18,9 +18,19 @@ const Carousel = ({ images }) => {
 
     return (
         <div className="carousel">
-            <button className="carousel-arrow left" onClick={goToPrevious}>&lt;</button>
-            <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
-            <button className="carousel-arrow right" onClick={goToNext}>&gt;</button>
+            <div className="carousel-container">
+                {images.map((image, index) => (
+                    <img
+                        key={image}
+                        className={`carousel-image ${currentIndex === index ? "carousel-image-active" : ""}`}
+                        src={image}
+                        alt={`Slide ${index}`}
+                        style={{ display: currentIndex === index ? 'block' : 'none' }} // affiche seulement l'image active
+                    />
+                ))}
+            </div>
+            <button className="carousel-arrow left" onClick={Previous}>&lt;</button>
+            <button className="carousel-arrow right" onClick={Next}>&gt;</button>
         </div>
     );
 };

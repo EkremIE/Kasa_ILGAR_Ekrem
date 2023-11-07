@@ -1,12 +1,13 @@
-// Dropdowns
+
 .dropdown {
   margin: 20px 0;
   border: none;
+  width: 100%;
 
   &-button {
     width: 100%;
     padding: 10px;
-    background-color: #ff6060; // Red from the mockup
+    background-color: #ff6060;
     color: white;
     text-align: left;
     border-radius: 5px;
@@ -23,11 +24,11 @@
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    display: none; // Hidden by default
+    display: none;
 
-    // This is the new part
+
     &.show {
-      display: block; // Shown when 'show' class is added
+      display: block;
     }
   }
 }
