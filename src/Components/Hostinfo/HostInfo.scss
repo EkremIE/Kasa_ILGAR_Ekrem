@@ -1,16 +1,51 @@
+@import "../../Styles/variables";
+
+
 .host-info-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border: 1px solid #ccc;
+  padding: 10px;
   border-radius: 10px;
-  background-color: #f2f2f2;
 }
 
 .left-container {
   flex: 1;
   text-align: left;
+
+  .location {
+    color: $primary-color;
+    margin-top: -15px;
+  }
+
+  .location-tags-container {
+    margin-top: 0px;
+  }
+
+  .tags {
+    margin-top: 20px;
+
+
+    .tag {
+      border: 1px solid #000; /* Ajoutez la bordure solide selon vos préférences */
+      padding: 2px 8px; /* Ajoutez un peu de marge intérieure pour l'apparence */
+      margin-right: 5px; /* Ajoutez un peu d'espacement entre les tags */
+      display: inline-block; /* Pour s'assurer que les tags s'affichent en ligne */
+      border-radius: 10px; /* Facultatif : ajoutez un peu de bordure arrondie */
+      background: $primary-color;
+      text-align: center;
+      color: #f7f7f7;
+      border: none;
+
+    }
+  }
+  h2 {
+    color: $primary-color;
+    fontSize: 36;
+    fontWeight: '500';
+    lineHeight: 51.34;
+    wordWrap: 'break-word'
+  }
 }
 
 .right-container {
@@ -24,10 +59,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: -35px;
 
     .host-name {
-      font-weight: bold;
-      margin-right: 10px;
+      margin-right: 20px;
+      color: $primary-color;
+      fontSize: 18;
+      fontWeight: '500';
+      lineHeight: 25.67;
+      wordWrap: 'break-word'
     }
 
     .host-picture {
@@ -40,7 +80,13 @@
   .host-rating {
     text-align: right;
     margin-top: 10px;
+
+    .rating {
+      color: $primary-color;
+    }
   }
+
+
 }
 
 
