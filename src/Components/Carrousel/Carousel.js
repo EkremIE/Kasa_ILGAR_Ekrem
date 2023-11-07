@@ -19,6 +19,8 @@ const Carousel = ({ images }) => {
     return (
         <div className="carousel">
             <div className="carousel-container">
+                <button className="carousel-arrow left" onClick={Previous}>&lt;</button>
+                <button className="carousel-arrow right" onClick={Next}>&gt;</button>
                 {images.map((image, index) => (
                     <img
                         key={image}
@@ -29,8 +31,8 @@ const Carousel = ({ images }) => {
                     />
                 ))}
             </div>
-            <button className="carousel-arrow left" onClick={Previous}>&lt;</button>
-            <button className="carousel-arrow right" onClick={Next}>&gt;</button>
+
+
         </div>
     );
 };

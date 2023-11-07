@@ -28,8 +28,8 @@ function Accommodation() {
             <Header showBackground={false} />
             <Carousel images={logement.pictures} />
             <div className="accommodation-details">
-                <h2 className="accommodation-title">{logement.title}</h2>
                 <HostInfo
+                    title={logement.title}
                     name={logement.host.name}
                     picture={logement.host.picture}
                     rating={logement.rating}
@@ -55,5 +55,6 @@ function Accommodation() {
 }
 
 export default Accommodation;
+
 
 

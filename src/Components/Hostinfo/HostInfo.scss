@@ -1,5 +1,47 @@
-@import "../../Styles/variables";
-
-.host-info {
+.host-info-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f2f2f2;
 }
+
+.left-container {
+  flex: 1;
+  text-align: left;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+
+  .host-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .host-name {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .host-picture {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+
+  .host-rating {
+    text-align: right;
+    margin-top: 10px;
+  }
+}
+
+
+
