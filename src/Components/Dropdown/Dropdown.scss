@@ -1,4 +1,3 @@
-
 .dropdown {
   margin: 20px 0;
   border: none;
@@ -12,10 +11,18 @@
     text-align: left;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    &:after {
-      content: '▼';
-      float: right;
+    &:hover {
+      background-color: #e94f4f;
+    }
+
+    .dropdown-arrow {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease-in-out;
     }
   }
 
@@ -24,11 +31,15 @@
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    display: none;
-
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
 
     &.show {
-      display: block;
+      max-height: 200px;
+      transition: max-height 0.3s ease-in-out;
     }
   }
 }
+
+
