@@ -1,9 +1,19 @@
-.accommodation {
+.accommodation-section {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
+;
+  margin-left: 70px;
+  margin-top: -30px;
 }
 
-.host-dropdowns {
+.accommodation-dropdowns {
   display: flex;
   justify-content: space-evenly;
+}
+
+.dropdown-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }

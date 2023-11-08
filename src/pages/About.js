@@ -16,7 +16,7 @@ const AboutPage = () => {
                     </div>
                 </div>
 
-
+                <div className='about-content'>
                 <Dropdown title="Fiabilité">
                     <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
                 </Dropdown>
@@ -32,7 +32,9 @@ const AboutPage = () => {
                 <Dropdown title="Sécurité">
                     <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En la matière, aucune tolérance ne sera acceptée.</p>
                 </Dropdown>
+                </div>
                 <Footer/>
+
             </div>
         </>
     );

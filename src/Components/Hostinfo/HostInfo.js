@@ -34,14 +34,14 @@ function HostInfo({ title, name, picture, rating, location, tags }) {
                 <div className="host-info">
                     <div className="host-name">
                         <span className="first-name">{firstName}</span>
-                        <br /> {/* Ajoutez un saut de ligne entre le nom et le prénom */}
+                        <br />
                         <span className="last-name">{lastName}</span>
                     </div>
                     <img className="host-picture" src={picture} alt={`Hébergé par ${name}`} />
                 </div>
                 <div className="host-rating">
                     <div className="rating">
-                        {renderStars(rating)} {/* Affichez les étoiles en fonction du rating */}
+                        {renderStars(rating)}
                     </div>
                 </div>
             </div>

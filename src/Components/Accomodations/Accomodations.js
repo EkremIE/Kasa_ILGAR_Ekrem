@@ -27,6 +27,7 @@ function Accommodation() {
         <div className="accommodation">
             <Header showBackground={false} />
             <Carousel images={logement.pictures} />
+            <div className='accommodation-section'>
             <div className="accommodation-details">
                 <HostInfo
                     title={logement.title}
@@ -37,18 +38,21 @@ function Accommodation() {
                     tags={logement.tags}
                 />
             </div>
-            <span className="host-dropdowns">
-            <Dropdown title="Description">
-                <p>{logement.description}</p>
-            </Dropdown>
-            <Dropdown title="Équipements">
-                <ul>
-                    {logement.equipments.map((equipment, index) => (
-                        <li key={index}>{equipment}</li>
-                    ))}
-                </ul>
-            </Dropdown>
-        </span>
+            <div className="accommodation-dropdowns">
+                <div className="dropdown-container">
+                    <Dropdown title="Description">
+                        <p>{logement.description}</p>
+                    </Dropdown>
+                    <Dropdown title="Équipements">
+                        <ul>
+                            {logement.equipments.map((equipment, index) => (
+                                <li key={index}>{equipment}</li>
+                            ))}
+                        </ul>
+                    </Dropdown>
+                </div>
+            </div>
+            </div>
             <Footer />
         </div>
     );
