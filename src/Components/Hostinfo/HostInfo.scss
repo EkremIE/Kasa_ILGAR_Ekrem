@@ -57,14 +57,13 @@
 
   .host-info {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-top: -35px;
+
 
     .host-name {
       margin-right: 20px;
       color: $primary-color;
-      fontSize: 18;
+      font-size: 20px;
       fontWeight: '500';
       lineHeight: 25.67;
       wordWrap: 'break-word'
@@ -81,8 +80,11 @@
     text-align: right;
     margin-top: 10px;
 
+
     .rating {
+      width: 196px;
       color: $primary-color;
+      font-size: x-large;
     }
   }
 

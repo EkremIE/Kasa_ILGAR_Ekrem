@@ -1,0 +1,26 @@
+@import '../Styles/variables';
+
+
+.Error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: $primary-color;
+    font-size: 200px;
+    font-weight: 700;
+  }
+  h2{
+    color: $primary-color;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  li{
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    list-style: none;
+  }
+}
