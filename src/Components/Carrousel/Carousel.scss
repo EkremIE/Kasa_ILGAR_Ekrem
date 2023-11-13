@@ -51,6 +51,17 @@
   }
 }
 
+// Media query pour les tablettes
+@media (max-width: 768px) {
+  .carousel .carousel-arrow.right {
+    right: 0;
+  }
+  .carousel .carousel-arrow.left {
+    left: 0;
+  }
+}
+
+
 
 
 

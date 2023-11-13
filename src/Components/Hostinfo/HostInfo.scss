@@ -91,5 +91,21 @@
 
 }
 
+@media (max-width: 768px) {
+  .host-info-container{
+    flex-direction: column;
+  }
+  .left-container{
+    margin-left: -55px;
+  }
+  .right-container{
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .host-name{
+    padding-left: 90px;
+  }
+}
+
 
 

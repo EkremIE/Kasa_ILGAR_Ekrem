@@ -5,8 +5,9 @@
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-  min-width: 1024px;
+html,body {
+  width: 100%;
   margin: auto;
+  overflow-x: hidden;
 
 }
