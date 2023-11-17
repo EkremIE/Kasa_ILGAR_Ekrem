@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 import NotFound from "../../pages/NotFound";
 import HostInfo from "../Hostinfo/HostInfo";
 
-function Accommodation() {
+function Accommodation() { // Logements Fetch
     const [logement, setLogement] = useState(null);
     const { id } = useParams(); // Récupérez l'ID de l'URL
 

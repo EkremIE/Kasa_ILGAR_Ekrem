@@ -27,12 +27,13 @@ const Carousel = ({ images }) => {
                         className={`carousel-image ${currentIndex === index ? "carousel-image-active" : ""}`}
                         src={image}
                         alt={`Slide ${index}`}
-                        style={{ display: currentIndex === index ? 'block' : 'none' }} // affiche seulement l'image active
+                        style={{ display: currentIndex === index ? 'block' : 'none' }}
                     />
                 ))}
+                <div className="carousel-counter">
+                    {`${currentIndex + 1}/${images.length}`}
+                </div>
             </div>
-
-
         </div>
     );
 };

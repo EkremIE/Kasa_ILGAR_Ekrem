@@ -35,8 +35,8 @@
   }
 
   &-content {
-    font-size: 18px;
-    font-weight: lighter;
+    font-size: 15px;
+    font-weight: 300;
     line-height: 142.6%;
     background-color: #F6F6F6;
     color: $primary-color;
@@ -45,17 +45,23 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+    p{
+      padding: 10px;
+    }
 
     &.show {
       max-height: 200px;
       transition: max-height 0.3s ease-in-out;
       color: $primary-color;
-      font-size: 18px;
-      font-weight: lighter;
+      font-size: 15px;
+      font-weight: 300;
       line-height: 142.6%;
       &ul {
 
         list-style: none;
+      }
+      p{
+        padding: 10px;
       }
     }
   }
